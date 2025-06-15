@@ -6,23 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Armin Abbasi</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/styles.css" media="print" onload="this.media='all'">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
-
+    <script src="scripts/particles.min.js" defer></script>
+    <script src="scripts/initParticles.js" defer></script>
+    <script src="scripts/typing.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 </head>
 
 <body class="main-content">
     <header class="container header active" id="home"
-        style="background-image: url(assets/modern.jpg); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; background-position: center;">
+        style="background-image: url(assets/images/modern.jpg); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; background-position: center;">
         <div id="particles-js"></div>
         <div class="header-content">
             <div class="h-shape"></div>
             <div class="left-header">
                 <div class="image">
-                    <img src="assets/profile-1.webp" alt="profile" loading="lazy">
+                    <img src="assets/images/profile-1.webp" alt="profile" loading="lazy">
                 </div>
             </div>
             <div class="right-header">
@@ -74,7 +74,7 @@
                 <div class="blogs">
                     <div class="blog" style="cursor: pointer;">
                         <a href="https://github.com/R-m1n/WAM/tree/main/BlockCluster" target="_blank">
-                            <img src="assets/block-cluster.webp" alt="block-cluster" loading="lazy">
+                            <img src="assets/images/block-cluster.webp" alt="block-cluster" loading="lazy">
                             <div class="blog-text">
                                 <h4>
                                     BlockCluster
@@ -88,7 +88,7 @@
                     <div class="blog" style="cursor: pointer;">
                         <a href="https://www.kaggle.com/code/arminabbasi/image-captioning-flickr-image-dataset"
                             target="_blank">
-                            <img src="assets/imge-captioning.webp" alt="image-captioning" loading="lazy">
+                            <img src="assets/images/imge-captioning.webp" alt="image-captioning" loading="lazy">
                             <div class="blog-text">
                                 <h4>
                                     Image Captioning on Flickr30k
@@ -103,7 +103,7 @@
                     <div class="blog" style="cursor: pointer;">
                         <a href="https://www.kaggle.com/code/arminabbasi/image-classification-with-resnet"
                             target="_blank">
-                            <img src="assets/res-on-cifar.webp" alt="res-on-cifar" loading="lazy">
+                            <img src="assets/images/res-on-cifar.webp" alt="res-on-cifar" loading="lazy">
                             <div class="blog-text">
                                 <h4>
                                     ResNet on CIFAR10
@@ -117,7 +117,7 @@
                     <div class="blog" style="cursor: pointer;">
                         <a href="https://www.kaggle.com/code/arminabbasi/filmiye-a-movie-recommendation-system"
                             target="_blank">
-                            <img src="assets/filmiye.webp" alt="filmiye" loading="lazy">
+                            <img src="assets/images/filmiye.webp" alt="filmiye" loading="lazy">
                             <div class="blog-text">
                                 <h4>
                                     Filmiye: A Movie Recommendation System
@@ -130,7 +130,7 @@
                     </div>
                     <div class="blog">
                         <a href="https://github.com/R-m1n/WAM/tree/main/One-Model%20DEA" target="_blank">
-                            <img src="assets/one-model.webp" alt="one-model" loading="lazy">
+                            <img src="assets/images/one-model.webp" alt="one-model" loading="lazy">
                             <div class="blog-text">
                                 <h4>
                                     One-Model DEA Conegstion Dashboard
@@ -144,7 +144,7 @@
                     <div class="blog">
                         <a href="https://github.com/R-m1n/WAM/tree/main/Youtube%20Trending%20Videos%20Analysis"
                             target="_blank">
-                            <img src="assets/youtube-analysis.webp" alt="youtube-anaysis" loading="lazy">
+                            <img src="assets/images/youtube-analysis.webp" alt="youtube-anaysis" loading="lazy">
                             <div class="blog-text">
                                 <h4>
                                     YouTube Trending Video Dataset Analysis
@@ -159,7 +159,7 @@
                     </div>
                     <div class="blog">
                         <a href="https://www.kaggle.com/code/arminabbasi/world-happiness-2019-analysis" target="_blank">
-                            <img src="assets/happy-analysis.webp" alt="happy-analysis" loading="lazy">
+                            <img src="assets/images/happy-analysis.webp" alt="happy-analysis" loading="lazy">
                             <div class="blog-text">
                                 <h4>
                                     World Happiness 2019 Analysis
@@ -172,7 +172,7 @@
                     </div>
                     <div class="blog">
                         <a href="https://github.com/R-m1n/undergrad" target="_blank">
-                            <img src="assets/undergrad.webp" alt="undergrad" loading="lazy">
+                            <img src="assets/images/undergrad.webp" alt="undergrad" loading="lazy">
                             <div class="blog-text">
                                 <h4>
                                     Undergrad: Everyones Trusty Automatic Differentiation Engine
@@ -187,7 +187,7 @@
                     </div>
                     <div class="blog">
                         <a href="https://github.com/R-m1n/Meinkrapft/tree/main/clamp-n-count" target="_blank">
-                            <img src="assets/clamp-n-count.webp" alt="clamp-n-count" loading="lazy">
+                            <img src="assets/images/clamp-n-count.webp" alt="clamp-n-count" loading="lazy">
                             <div class="blog-text">
                                 <h4>
                                     Clamp-n-Count
@@ -200,7 +200,7 @@
                     </div>
                     <div class="blog">
                         <a href="https://github.com/R-m1n/Meinkrapft/tree/main/meanliss" target="_blank">
-                            <img src="assets/meanliss.webp" alt="meanliss" loading="lazy">
+                            <img src="assets/images/meanliss.webp" alt="meanliss" loading="lazy">
                             <div class="blog-text">
                                 <h4>
                                     Meanliss
@@ -213,7 +213,7 @@
                     </div>
                     <div class="blog">
                         <a href="https://github.com/R-m1n/Bletchley" target="_blank">
-                            <img src="assets/enigma.webp" alt="bletchley" loading="lazy">
+                            <img src="assets/images/enigma.webp" alt="bletchley" loading="lazy">
                             <div class="blog-text">
                                 <h4>
                                     Bletchley
@@ -226,7 +226,7 @@
                     </div>
                     <div class="blog">
                         <a href="https://github.com/R-m1n/pyter" target="_blank">
-                            <img src="assets/pyter.webp" alt="pyter" loading="lazy">
+                            <img src="assets/images/pyter.webp" alt="pyter" loading="lazy">
                             <div class="blog-text">
                                 <h4>
                                     Pyter
@@ -239,7 +239,7 @@
                     </div>
                     <div class="blog">
                         <a href="https://github.com/R-m1n/pycture" target="_blank">
-                            <img src="assets/pycture.webp" alt="pycture" loading="lazy">
+                            <img src="assets/images/pycture.webp" alt="pycture" loading="lazy">
                             <div class="blog-text">
                                 <h4>
                                     Pycture
@@ -251,7 +251,7 @@
                         </a>
                     </div>
                     <div class="blog">
-                        <img src="assets/dsa.webp" alt="dsa" loading="lazy">
+                        <img src="assets/images/dsa.webp" alt="dsa" loading="lazy">
                         <div class="blog-text">
                             <h4>
                                 DSA Trilingo
@@ -279,7 +279,7 @@
                     <h3 style="margin-bottom: 1rem;">B.Sc. in Computer Engineering</h3>
                     <div class="portfolio-item">
                         <div class="image">
-                            <img src="assets/iautcb.webp" alt="chemical-substances" loading="lazy">
+                            <img src="assets/images/iautcb.webp" alt="chemical-substances" loading="lazy">
                         </div>
                         <div class="hover-items">
                             <h3>Islamic Azad University Central Tehran Branch</h3>
@@ -296,7 +296,7 @@
                     <h3 style="margin-bottom: 1rem;">M.Sc. in Computer Science</h3>
                     <div class="portfolio-item">
                         <div class="image">
-                            <img src="assets/sbu.webp" alt="building-construction" loading="lazy">
+                            <img src="assets/images/sbu.webp" alt="building-construction" loading="lazy">
                         </div>
                         <div class="hover-items">
                             <h3>Shahid Beheshti University</h3>
@@ -477,161 +477,6 @@
             <i class="fa-solid fa-address-card"></i>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="scripts/app.js"></script>
-    <script>
-        particlesJS('particles-js',
-            {
-                "particles": {
-                    "number": {
-                        "value": 80,
-                        "density": {
-                            "enable": true,
-                            "value_area": 800
-                        }
-                    },
-                    "color": {
-                        "value": "#a11d21"
-                    },
-                    "shape": {
-                        "type": "circle",
-                        "stroke": {
-                            "width": 0,
-                            "color": "#000000"
-                        },
-                        "polygon": {
-                            "nb_sides": 5
-                        },
-                        "image": {
-                            "src": "img/github.svg",
-                            "width": 100,
-                            "height": 100
-                        }
-                    },
-                    "opacity": {
-                        "value": 0.5,
-                        "random": false,
-                        "anim": {
-                            "enable": false,
-                            "speed": 1,
-                            "opacity_min": 0.1,
-                            "sync": false
-                        }
-                    },
-                    "size": {
-                        "value": 3,
-                        "random": true,
-                        "anim": {
-                            "enable": false,
-                            "speed": 40,
-                            "size_min": 0.1,
-                            "sync": false
-                        }
-                    },
-                    "line_linked": {
-                        "enable": true,
-                        "distance": 150,
-                        "color": "#ffffff",
-                        "opacity": 0.4,
-                        "width": 1
-                    },
-                    "move": {
-                        "enable": true,
-                        "speed": 2,
-                        "direction": "none",
-                        "random": false,
-                        "straight": false,
-                        "out_mode": "out",
-                        "bounce": false,
-                        "attract": {
-                            "enable": false,
-                            "rotateX": 600,
-                            "rotateY": 1200
-                        }
-                    }
-                },
-                "interactivity": {
-                    "detect_on": "canvas",
-                    "events": {
-                        "onhover": {
-                            "enable": false,
-                            "mode": "repulse"
-                        },
-                        "onclick": {
-                            "enable": true,
-                            "mode": "push"
-                        },
-                        "resize": true
-                    },
-                    "modes": {
-                        "grab": {
-                            "distance": 400,
-                            "line_linked": {
-                                "opacity": 1
-                            }
-                        },
-                        "bubble": {
-                            "distance": 400,
-                            "size": 40,
-                            "duration": 2,
-                            "opacity": 8,
-                            "speed": 3
-                        },
-                        "repulse": {
-                            "distance": 200,
-                            "duration": 0.4
-                        },
-                        "push": {
-                            "particles_nb": 4
-                        },
-                        "remove": {
-                            "particles_nb": 2
-                        }
-                    }
-                },
-                "retina_detect": true
-            }
-            , function () {
-                console.log('callback - particles.js config loaded');
-            });
-    </script>
 </body>
 
 </html>
-
-<script>
-    const textArray = ["Researcher", "Computer Scientist", "Programmer"];
-    const typingDelay = 100;
-    const erasingDelay = 50;
-    const newTextDelay = 1000;
-    let textIndex = 0;
-    let charIndex = 0;
-
-    const typedTextSpan = document.getElementById("typewriter");
-
-    function type() {
-        if (charIndex < textArray[textIndex].length) {
-            typedTextSpan.textContent += textArray[textIndex].charAt(charIndex);
-            charIndex++;
-            setTimeout(type, typingDelay);
-        } else {
-            setTimeout(erase, newTextDelay);
-        }
-    }
-
-    function erase() {
-        if (charIndex > 0) {
-            typedTextSpan.textContent = textArray[textIndex].substring(0, charIndex - 1);
-            charIndex--;
-            setTimeout(erase, erasingDelay);
-        } else {
-            textIndex = (textIndex + 1) % textArray.length;
-            setTimeout(type, typingDelay);
-        }
-    }
-
-    document.addEventListener("DOMContentLoaded", () => {
-        setTimeout(type, newTextDelay);
-    });
-</script>

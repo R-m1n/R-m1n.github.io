@@ -1,4 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@font-face {
+  font-family: "Poppins";
+  src: url('../assets/fonts/Poppins-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url('../assets/fonts/Poppins-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
 
 * {
   margin: 0;
@@ -74,7 +88,12 @@ em {
 }
 
 b {
+  font-family: "Poppins-SemiBold", sans-serif;
   color: var(--color-secondary);
+}
+
+h1 {
+  font-family: "Poppins-SemiBold", sans-serif;
 }
 
 .container {
