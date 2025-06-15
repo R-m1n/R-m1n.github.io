@@ -6,10 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Armin Abbasi</title>
-    <link rel="stylesheet" href="styles/styles.min.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="assets/fontawesome/css/brands.min.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="assets/fontawesome/css/solid.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/styles.min.css">
+    <link rel="preload" href="assets/fontawesome/css/fontawesome.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css">
+    </noscript>
+
+    <link rel="preload" href="assets/fontawesome/css/brands.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/fontawesome/css/brands.min.css">
+    </noscript>
+
+    <link rel="preload" href="assets/fontawesome/css/solid.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/fontawesome/css/solid.min.css">
+    </noscript>
     <link rel="preload" href="assets/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2"
         crossorigin="anonymous">
     <link rel="preload" href="assets/fontawesome/webfonts/fa-solid-400.woff2" as="font" type="font/woff2"
@@ -140,7 +154,7 @@
                             <img src="assets/images/one-model.webp" alt="one-model" loading="lazy">
                             <div class="blog-text">
                                 <h4>
-                                    One-Model DEA Conegstion Dashboard
+                                    One-Model DEA Congestion Dashboard
                                 </h4>
                                 <p>
                                     A full dashboard for one-model data envelopment analysis.
@@ -187,7 +201,7 @@
                                 <p>
                                     The obvious next step after autograd, micrograd, tinygrad (<span
                                         style="color: #a11d21;">Currently Under
-                                        Developement</span>)
+                                        Development</span>)
                                 </p>
                             </div>
                         </a>
@@ -348,7 +362,7 @@
             <div class="about-container">
                 <div class="left-about">
                     <p>
-                        My name is Armin Abbsi, I’m currently pursuing an M.Sc. in Computer Science at Shahid Beheshti
+                        My name is Armin Abbasi, I’m currently pursuing an M.Sc. in Computer Science at Shahid Beheshti
                         University, where I spend
                         most of my time obsessing over elegant algorithms, efficient learning systems, and the art of
                         squeezing meaning out of high-dimensional chaos.
@@ -451,7 +465,7 @@
                 <div class="right-about" style="grid-template-columns: repeat(1, 1fr);">
                     <div class="about-item">
                         <div class="abt-text">
-                            <p class="large-text">Personal Feaures & Bugs</p>
+                            <p class="large-text">Personal Features & Bugs</p>
                             <p class="small-text">I’m obsessively detail-oriented. Given enough time, I will happily
                                 optimize a system down to bit-level manipulation if left unchecked.</p>
                             <p class="small-text">I don’t do “just good enough.” Unless there’s a hard deadline, I keep
