@@ -15,6 +15,10 @@
 </head>
 
 <body class="main-content">
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
     <header class="container header active" id="home"
         style="background-image: url(assets/images/modern.jpg); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; background-position: center;">
         <div id="particles-js"></div>
@@ -477,6 +481,22 @@
             <i class="fa-solid fa-address-card"></i>
         </div>
     </div>
+    <script>
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+
+            setTimeout(() => {
+                loader.classList.add('fade-out');
+            }, 2000);
+        });
+
+        setTimeout(() => {
+            const loader = document.getElementById('loader');
+            if (loader && !loader.classList.contains('fade-out')) {
+                loader.classList.add('fade-out');
+            }
+        }, 5000);
+    </script>
 </body>
 
 </html>
