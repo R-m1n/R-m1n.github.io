@@ -12,23 +12,6 @@
     <script src="scripts/app.js" defer></script>
 </head>
 
-<script>
-    window.addEventListener('load', () => {
-        const loader = document.getElementById('loader');
-
-        setTimeout(() => {
-            loader.classList.add('fade-out');
-        }, 3000);
-    });
-
-    setTimeout(() => {
-        const loader = document.getElementById('loader');
-        if (loader && !loader.classList.contains('fade-out')) {
-            loader.classList.add('fade-out');
-        }
-    }, 5000);
-</script>
-
 <body class="main-content">
     <div id="loader">
         <div class="spinner"></div>
@@ -66,13 +49,13 @@
                     <div class="contact-icons" style="display: inline-block;">
                         <div class="contact-icon">
                             <a href="https://www.linkedin.com/in/r-m1n/" target="_blank">
-                                <i class="fab fa-linkedin"></i>
+                                <i class="fa-brands fa-linkedin-in"></i>
                             </a>
                             <a href="https://github.com/R-m1n" target="_blank">
-                                <i class="fab fa-github"></i>
+                                <i class="fa-brands fa-github"></i>
                             </a>
                             <a href="https://www.kaggle.com/arminabbasi" target="_blank">
-                                <i class="fab fa-kaggle"></i>
+                                <i class="fa-brands fa-kaggle"></i>
                             </a>
                             <a href="https://leetcode.com/u/R-m1n/" target="_blank">
                                 <i class="fa-solid fa-code"></i>
@@ -397,13 +380,13 @@
                         <div class="contact-icons" style="display: inline-block;">
                             <div class="contact-icon">
                                 <a href="https://www.linkedin.com/in/r-m1n/" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
+                                    <i class="fa-brands fa-linkedin-in"></i>
                                 </a>
                                 <a href="https://github.com/R-m1n" target="_blank">
-                                    <i class="fab fa-github"></i>
+                                    <i class="fa-brands fa-github"></i>
                                 </a>
                                 <a href="https://www.kaggle.com/arminabbasi" target="_blank">
-                                    <i class="fab fa-kaggle"></i>
+                                    <i class="fa-brands fa-kaggle"></i>
                                 </a>
                                 <a href="https://leetcode.com/u/R-m1n/" target="_blank">
                                     <i class="fa-solid fa-code"></i>
@@ -496,6 +479,23 @@
             <i class="fa-solid fa-address-card"></i>
         </div>
     </div>
+
+    <script>
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+
+            setTimeout(() => {
+                loader.classList.add('fade-out');
+            }, 3000);
+        });
+
+        setTimeout(() => {
+            const loader = document.getElementById('loader');
+            if (loader && !loader.classList.contains('fade-out')) {
+                loader.classList.add('fade-out');
+            }
+        }, 5000);
+    </script>
 </body>
 
 </html>
