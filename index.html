@@ -6,19 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Armin Abbasi</title>
+    <style>
+        #loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #0a191e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+
+        .spinner {
+            width: 80px;
+            height: 80px;
+            border: 5px solid #6c7983;
+            border-top: 5px solid #a11d21;
+            box-shadow: 0 3px 15px rgba(161, 29, 33, .7);
+            border-radius: 100%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        #loader.fade-out {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+    </style>
+    <noscript>
+        <style>
+            body {
+                visibility: visible !important;
+            }
+
+            #loader {
+                display: none;
+            }
+        </style>
+    </noscript>
     <link rel="stylesheet" href="styles/styles.min.css">
     <link rel="preload" href="assets/fontawesome/css/fontawesome.min.css" as="style"
         onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css">
     </noscript>
-
     <link rel="preload" href="assets/fontawesome/css/brands.min.css" as="style"
         onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="assets/fontawesome/css/brands.min.css">
     </noscript>
-
     <link rel="preload" href="assets/fontawesome/css/solid.min.css" as="style"
         onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
@@ -506,15 +552,8 @@
 
             setTimeout(() => {
                 loader.classList.add('fade-out');
-            }, 3000);
+            }, 2000);
         });
-
-        setTimeout(() => {
-            const loader = document.getElementById('loader');
-            if (loader && !loader.classList.contains('fade-out')) {
-                loader.classList.add('fade-out');
-            }
-        }, 5000);
     </script>
 </body>
 
