@@ -12,6 +12,22 @@
     <script src="scripts/initParticles.js" defer></script>
     <script src="scripts/typing.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script>
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+
+            setTimeout(() => {
+                loader.classList.add('fade-out');
+            }, 2000);
+        });
+
+        setTimeout(() => {
+            const loader = document.getElementById('loader');
+            if (loader && !loader.classList.contains('fade-out')) {
+                loader.classList.add('fade-out');
+            }
+        }, 5000);
+    </script>
 </head>
 
 <body class="main-content">
@@ -481,22 +497,6 @@
             <i class="fa-solid fa-address-card"></i>
         </div>
     </div>
-    <script>
-        window.addEventListener('load', () => {
-            const loader = document.getElementById('loader');
-
-            setTimeout(() => {
-                loader.classList.add('fade-out');
-            }, 2000);
-        });
-
-        setTimeout(() => {
-            const loader = document.getElementById('loader');
-            if (loader && !loader.classList.contains('fade-out')) {
-                loader.classList.add('fade-out');
-            }
-        }, 5000);
-    </script>
 </body>
 
 </html>
