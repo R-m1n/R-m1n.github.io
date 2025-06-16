@@ -14,13 +14,6 @@
     font-display: swap;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-}
-
 :root {
     --color-primary: #0a191e;
     --color-secondary: #a11d21;
@@ -37,6 +30,13 @@
     --box-shadow-1: 0 3px 15px rgba(161, 29, 33, .7);
     --box-shadow-2: 1px 2px 15px rgba(161, 29, 33, .7);
     --box-shadow-3: 1px 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
 }
 
 body {
@@ -99,7 +99,7 @@ h1 {
 
 @keyframes appear {
     0% {
-        filter: blur(5px);
+        filter: blur(10px);
     }
 
     100% {
@@ -476,8 +476,7 @@ h1 {
 .blogs .blog .blog-text h4 {
     font-size: 1.5rem;
     margin-bottom: 0.7rem;
-    transition: all 0.4s ease-in-out;
-    cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 
 .blogs .blog .blog-text h4:hover {
